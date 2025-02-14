@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelian Kopi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Toko Kopi Kami</h1>
+    </header>
+
+    <section class="menu">
+        <h2>Menu Kopi</h2>
+        <div class="product">
+            <img src="coffee1.jpg" alt="Kopi Arabika">
+            <h3>Kopi Arabika</h3>
+            <p>Harga: Rp 40.000</p>
+            <button onclick="addToCart('Kopi Arabika', 40000)">Tambahkan ke Keranjang</button>
+        </div>
+        <div class="product">
+            <img src="coffee5.jpg" alt="Kopi Robusta">
+            <h3>Kopi Robusta</h3>
+            <p>Harga: Rp 35.000</p>
+            <button onclick="addToCart('Kopi Robusta', 35000)">Tambahkan ke Keranjang</button>
+        </div>
+        <div class="product">
+            <img src="coffee7.jpg" alt="Kopi Liberika">
+            <h3>Kopi Liberika</h3>
+            <p>Harga: Rp 45.000</p>
+            <button onclick="addToCart('Kopi Liberika', 45000)">Tambahkan ke Keranjang</button>
+        </div>
+    </section>
+
+    <section class="cart">
+        <h2>Keranjang Belanja</h2>
+        <ul id="cartList"></ul>
+        <p>Total: Rp <span id="totalPrice">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <footer>
+        <p>© 2025 Toko Kopi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
